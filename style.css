@@ -20,12 +20,12 @@ a {
 } */
 
 /* PER VEDERE I CONTAINER */
-/* .debug * {
+.debug * {
   min-height: 50px;
   padding: 5px;
   background-color: rgba(255, 0, 0, 0.236);
   border: 2px dashed red;
-} */
+}
 
 /* HEADER */
 .content-header {
@@ -52,6 +52,39 @@ a {
 }
 .background-hero {
   background: url(./imgs/logo.webp);
+}
+/* LOCATION */
+.content-locations {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+.locations-part1 {
+  width: 50%;
+  text-align: center;
+}
+.locations-part1 img {
+  padding: 2rem;
+  height: 50rem;
+}
+.locations-part2 {
+  width: 50%;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.locations-part2 button {
+  background-color: white;
+  color: #2e2827;
+  border: 1px solid currentColor;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.locations-part2 p {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 /* FOOTER */
