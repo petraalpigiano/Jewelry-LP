@@ -46,6 +46,59 @@ a {
   margin-right: 1rem;
 }
 
+/* HERO */
+.background-hero video {
+  width: 100%;
+}
+.background-hero {
+  background: url(./imgs/logo.webp);
+}
+
+/* FOOTER */
+.background-footer {
+  background-color: #000000;
+}
+.content-footer {
+  color: white;
+}
+.content-footer p {
+  color: #7b797b;
+}
+.content-footer p i {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.content-footer span:last-child {
+  margin-left: 5px;
+}
+.content-footer hr {
+  margin-bottom: 30px;
+  border: 0.5px solid #f3f3f3;
+  width: 90px;
+}
+.distance2 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.col-1-2 {
+  width: calc(100% / 2);
+  text-align: center;
+}
+.col-1-2 nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.col-1-2 nav a {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #acb2b0;
+  font-size: small;
+  line-height: 17px;
+}
 /* GRIGLIA DI COLONNE */
 /* .container {
   max-width: 1180px;
