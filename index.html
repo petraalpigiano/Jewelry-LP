@@ -20,22 +20,25 @@
     <title>Gioielli</title>
   </head>
   <body class="debug">
-    <!-- HEADER -->
-    <div class="background-header">
-      <header class="container">
-        <div class="content-header">
-          <img class="logo" src="./imgs/logo.webp" alt="shop logo" />
+    <header class="container">
+      <div class="content-header">
+        <img class="logo" src="./imgs/logo.webp" alt="shop logo" />
+        <!-- Menu Hamburger -->
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-links">
           <h4>REGALI</h4>
           <h4>GIOIELLI</h4>
           <h4>MAISON</h4>
           <h4>CONTATTI</h4>
-          <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-user"></i>
-          </div>
+        </nav>
+        <div class="icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-user"></i>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
     <!-- HERO -->
     <div class="background-hero">
       <video autoplay loop muted>
@@ -45,75 +48,30 @@
         <div class="content-hero"></div>
       </div>
     </div>
+    <!-- MAIN -->
     <main class="container">
       <!-- PRODOTTI -->
+      <h2 class="title">SCOPRI I NOSTRI DIAMANTI</h2>
       <div class="content-products">
         <div class="text-img">
-          <img src="./imgs/collana.jpeg" alt="collana" />
+          <img class="shrink" src="./imgs/collana.jpeg" alt="collana" />
           <h3>COLLANE</h3>
+          <button class="btn">Scopri</button>
         </div>
         <div class="text-img">
-          <img src="./imgs/collana.jpeg" alt="collana" />
-          <h3>COLLANE</h3>
+          <img class="shrink" src="./imgs/anello.jpeg" alt="anello" />
+          <h3>ANELLI</h3>
+          <button class="btn">Scopri</button>
         </div>
         <div class="text-img">
-          <img src="./imgs/collana.jpeg" alt="collana" />
-          <h3>COLLANE</h3>
+          <img class="shrink" src="./imgs/fermagli.png" alt="fermagli" />
+          <h3>FERMAGLI</h3>
+          <button class="btn">Scopri</button>
         </div>
-
-        <!-- <img src="./imgs/anello.jpeg" alt="anello" />
-
-        <img src="./imgs/fermagli.png" alt="fermagli" /> -->
-
-        <!-- <h2>SERVIZI</h2> -->
-        <!-- <div class="row">
-          <div class="col">
-            <div class="card">
-              <img src="./imgs/collana.jpeg" alt="collana" />
-              <h3 class="title">Cura del prodotto</h3>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./imgs/anello.jpeg" alt="anello" />
-              <h3 class="title">Estendi la garanzia</h3>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./imgs/fermagli.png" alt="fermagli" />
-              <h3 class="title">Estendi la garanzia</h3>
-            </div>
-          </div>
-        </div> -->
       </div>
-      <div class="content-services">
-        <!-- <h2>SERVIZI</h2>
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <img src="./imgs/cura.jpg" alt="cura del prodotto" />
-              <h3 class="title">Cura del prodotto</h3>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./imgs/garanzia.jpg" alt="estendi la garanzia" />
-              <h3 class="title">Estendi la garanzia</h3>
-            </div>
-          </div>
-        </div> -->
-      </div>
-      <div class="content-locations">
-        <!-- <div class="locations-part1">
-          <img src="./imgs/store.jpg" alt="our store" />
-        </div>
-        <div class="locations-part2">
-          <h2>Trova il tuo negozio</h2>
-          <p>Non vediamo l'ora di accoglierti nel nostro mondo</p>
-          <button>Scopri</button>
-        </div> -->
-      </div>
+      <div class="content-services"></div>
+      <div class="content-locations"></div>
+
       <!-- FORM -->
       <div class="content-form">
         <div class="text-form">
@@ -210,12 +168,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
-
-<!-- <div class="row">
-        <div class="col-1-2"></div>
-        <div class="col-1-2"></div>
-        <div class="col-1-2"></div>
-        <div class="col-1-2"></div>
-      </div> -->
