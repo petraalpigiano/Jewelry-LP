@@ -33,6 +33,10 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+.content-header h4 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+}
 .content-header .logo {
   height: 7rem;
 }
@@ -50,31 +54,39 @@ a {
 .background-hero video {
   width: 100%;
 }
-.background-hero {
-  background: url(./imgs/logo.webp);
+/* PRODUCTS */
+.content-products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-/* SERVICES */
-.content-services {
+/* .content-products h3 {
+} */
+
+/* PRODUCTS */
+/* .content-products {
   padding: 3rem 0;
   text-align: center;
 }
-.content-services .row {
+.content-products .row {
   display: flex;
-}
+  flex-wrap: wrap;
+  flex-grow: 1;
+} */
 /* .content-services h2,
 .content-services h3 {
 } */
 
-.content-services .col {
-  width: calc(100% / 2);
-}
+/* .content-products .col {
+  width: calc(100% / 3);
+} */
 
-.content-services .col img {
+/* .content-products .col img {
   height: 20rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
-}
-/* LOCATION */
+} */
+/* LOCATION
 .content-locations {
   display: flex;
   flex-wrap: wrap;
@@ -106,58 +118,107 @@ a {
 .locations-part2 p {
   padding-bottom: 20px;
   padding-top: 20px;
-}
+} */
 
 /* FORM */
-
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #1e1e1e;
-  box-sizing: border-box;
-  resize: vertical;
+.content-form {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.text-form {
+  text-align: center;
+}
+.text-form h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  margin: 1rem;
+}
+.text-form p {
+  color: black;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.container-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+.row-columns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
-input[type="submit"] {
-  background-color: #000000;
-  color: white;
-  padding: 12px 20px;
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-class {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.f-input {
+  padding: 10px;
+  border: none;
+  border: 1px solid rgb(136, 136, 136);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.f-input:hover {
+  transform: scale(1.03);
+}
+
+.f-input:focus {
+  transform: scale(1);
+
+  outline: 2px solid rgb(0, 0, 0);
+}
+
+.area-f-input {
+  min-height: 100px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-top: 15px;
   border: none;
   cursor: pointer;
-  float: right;
-  width: auto;
+  align-self: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+.btn:hover {
+  transform: scale(1.03);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid black;
 }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+.btn:active {
+  transform: scale(1);
+  box-shadow: 1px 1px 3px black;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+  }
 
-@media screen and (max-width: 600px) {
-  .col-25,
-  .col-75,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
+  .row-columns {
+    flex-direction: column;
   }
 }
 
@@ -167,21 +228,6 @@ input[type="submit"] {
 }
 .content-footer {
   color: white;
-}
-.content-footer p {
-  color: #7b797b;
-}
-.content-footer p i {
-  margin-right: 10px;
-  margin-left: 0;
-}
-.content-footer span:last-child {
-  margin-left: 5px;
-}
-.content-footer hr {
-  margin-bottom: 30px;
-  border: 0.5px solid #f3f3f3;
-  width: 90px;
 }
 .distance2 {
   padding-top: 60px;
@@ -193,6 +239,10 @@ input[type="submit"] {
   width: calc(100% / 2);
   text-align: center;
 }
+.col-1-2 h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
 .col-1-2 nav {
   display: flex;
   flex-wrap: wrap;
@@ -201,11 +251,39 @@ input[type="submit"] {
 .col-1-2 nav a {
   width: 100%;
   padding-top: 8px;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
   padding-bottom: 8px;
   color: #acb2b0;
   font-size: small;
   line-height: 17px;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .content-products img {
+    width: 8rem;
+  }
+  .text-form p {
+    font-size: 1rem;
+  }
+  .text-form h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .content-products img {
+    width: 14rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .content-products img {
+    width: 20rem;
+  }
+}
+
 /* GRIGLIA DI COLONNE */
 /* .container {
   max-width: 1180px;

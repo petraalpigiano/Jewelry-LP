@@ -39,16 +39,45 @@
     <!-- HERO -->
     <div class="background-hero">
       <video autoplay loop muted>
-        <source src="./imgs/hero_video.mp4" type="video/mp4" />
+        <source src="./imgs/hero2.mp4" type="video/mp4" />
       </video>
       <div class="container-hero">
         <div class="content-hero"></div>
       </div>
     </div>
     <main class="container">
-      <div class="content-products"></div>
+      <!-- PRODOTTI -->
+      <div class="content-products">
+        <img src="./imgs/collana.jpeg" alt="collana" />
+
+        <!-- <h3>COLLANE</h3> -->
+        <img src="./imgs/anello.jpeg" alt="anello" />
+
+        <img src="./imgs/fermagli.png" alt="fermagli" />
+        <!-- <h2>SERVIZI</h2> -->
+        <!-- <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="./imgs/collana.jpeg" alt="collana" />
+              <h3 class="title">Cura del prodotto</h3>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./imgs/anello.jpeg" alt="anello" />
+              <h3 class="title">Estendi la garanzia</h3>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./imgs/fermagli.png" alt="fermagli" />
+              <h3 class="title">Estendi la garanzia</h3>
+            </div>
+          </div>
+        </div> -->
+      </div>
       <div class="content-services">
-        <h2>SERVIZI</h2>
+        <!-- <h2>SERVIZI</h2>
         <div class="row">
           <div class="col">
             <div class="card">
@@ -62,83 +91,88 @@
               <h3 class="title">Estendi la garanzia</h3>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="content-locations">
-        <div class="locations-part1">
+        <!-- <div class="locations-part1">
           <img src="./imgs/store.jpg" alt="our store" />
         </div>
         <div class="locations-part2">
           <h2>Trova il tuo negozio</h2>
           <p>Non vediamo l'ora di accoglierti nel nostro mondo</p>
           <button>Scopri</button>
-        </div>
+        </div> -->
       </div>
+      <!-- FORM -->
       <div class="content-form">
-        <h2>CONTATTACI</h2>
-        <p>
-          Un consulente risponderà alle tue domande e ti supporterà
-          nell'acquisto
-        </p>
-        <form action="">
-          <div class="row">
-            <div class="col-25">
-              <label for="nome">Nome</label>
+        <div class="text-form">
+          <h2>CONTATTACI</h2>
+          <p>
+            Un consulente risponderà alle tue domande e ti supporterà
+            nell'acquisto
+          </p>
+        </div>
+
+        <form>
+          <div class="container-form">
+            <div class="row-columns">
+              <div class="field">
+                <label for="nome" class="label-class">Nome</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  class="f-input"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="cognome" class="label-class">Cognome</label>
+                <input
+                  id="cognome"
+                  name="cognome"
+                  type="text"
+                  class="f-input"
+                  required
+                />
+              </div>
             </div>
-            <div class="col-75">
-              <input type="text" id="nome" name="nome" />
+
+            <div class="row-columns">
+              <div class="field">
+                <label for="email" class="label-class">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="f-input"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="telefono" class="label-class">Telefono</label>
+                <input
+                  id="telefono"
+                  name="telefono"
+                  type="tel"
+                  class="f-input"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="cognome">Cognome</label>
+
+            <div class="field">
+              <label for="messaggio" class="label-class">Messaggio</label>
+              <textarea
+                id="messaggio"
+                name="messaggio"
+                class="area-f-input f-input"
+                required
+              ></textarea>
             </div>
-            <div class="col-75">
-              <input type="text" id="cognome" name="cognome" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Email</label>
-            </div>
-            <div class="col-75">
-              <input type="email" id="email" name="email" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="telefono">Telefono</label>
-            </div>
-            <div class="col-75">
-              <input type="number" id="telefono" name="telefono" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="messaggio">Messaggio</label>
-            </div>
-            <div class="col-75">
-              <textarea id="messaggio" name="subject"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <input type="submit" value="Invia" />
+
+            <button class="btn" type="submit">Invia</button>
           </div>
         </form>
-
-        <!-- <form action="">
-          <label for="nome">Nome</label><br />
-          <input type="text" id="nome" name="nome" /><br />
-          <label for="cognome">Cognome</label><br />
-          <input type="text" id="cognome" name="cognome" /><br />
-          <label for="email">Email</label><br />
-          <input type="email" id="email" name="email" /><br />
-          <label for="telefono">Telefono</label><br />
-          <input type="number" id="telefono" name="telefono" /><br />
-          <label for="messaggio">Messaggio</label><br />
-          <textarea type="" id="messaggio" name="messaggio"></textarea><br />
-          <input type="submit" value="Invia" />
-        </form> -->
       </div>
     </main>
 
@@ -150,14 +184,14 @@
             <div class="col-1-2">
               <h3>CUSTOMER SERVICE</h3>
               <nav>
-                <a href="#">Lun - Ven 09:00 - 18:00, Sabato 09:00 - 17:00</a>
+                <a href="#">Lun - Ven 09:00 - 18:00 / Sabato 09:00 - 17:00</a>
                 <a href="#">+39 341 369 7979</a>
               </nav>
             </div>
             <div class="col-1-2">
               <h3>NOTE LEGALI</h3>
               <nav>
-                <a href="#">Terms & Conditions</a>
+                <a href="#">Termini & Condizioni</a>
                 <a href="#">Privacy Policy</a>
               </nav>
             </div>
