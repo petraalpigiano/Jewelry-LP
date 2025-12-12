@@ -63,6 +63,12 @@ a {
 /* .content-products h3 {
 } */
 
+.text-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* PRODUCTS */
 /* .content-products {
   padding: 3rem 0;
@@ -271,6 +277,10 @@ a {
   }
   .text-form h2 {
     font-size: 1.2rem;
+  }
+  .distance2 {
+    display: block;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 769px) {
